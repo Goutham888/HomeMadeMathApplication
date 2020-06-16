@@ -1,0 +1,19 @@
+package com.testing;
+
+import java.util.List;
+
+import com.data.User;
+import com.login.dao.LoginDataAccessObject;
+
+public class GetAllTest {
+
+	public static void main(String[] args) {
+		LoginDataAccessObject ldao = new LoginDataAccessObject();
+		List<User> users = ldao.getAllUsers();
+		
+		for(User user: users) {
+			System.out.println(user.getFirstName());
+		}
+	}
+
+}

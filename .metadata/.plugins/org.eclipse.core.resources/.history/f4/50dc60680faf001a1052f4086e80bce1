@@ -1,0 +1,11 @@
+package com.testing;
+
+import com.login.dao.LoginDataAccessObject;
+
+public class GetAllTest {
+
+	public static void main(String[] args) {
+		LoginDataAccessObject ldao = new LoginDataAccessObject();
+	}
+
+}

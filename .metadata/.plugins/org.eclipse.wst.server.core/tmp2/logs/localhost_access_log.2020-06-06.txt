@@ -1,0 +1,2 @@
+127.0.0.1 - - [06/Jun/2020:13:38:24 -0400] "GET /DevMgmt/ProductConfigDyn.xml HTTP/1.1" 404 783
+127.0.0.1 - - [06/Jun/2020:13:38:24 -0400] "GET /DevMgmt/DiscoveryTree.xml HTTP/1.1" 404 780
