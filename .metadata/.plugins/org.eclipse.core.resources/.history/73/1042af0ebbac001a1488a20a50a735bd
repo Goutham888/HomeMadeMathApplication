@@ -1,8 +1,0 @@
-package com.util;
-
-public class FunsieMethods {
-
-	public PreparedStatement establishConnection() {
-		
-	}
-}

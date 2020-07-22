@@ -33,7 +33,6 @@ public class SignUpDAO {
 			st.setString(4, lastName);
 			
 			st.executeUpdate();
-			System.out.println("hey");
 			
 			
 		} catch (Exception e) {

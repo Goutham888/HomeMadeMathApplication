@@ -44,5 +44,9 @@ $(document).ready(function() {
     </table>
     </td></tr></table>
 </form>
+
+	<form action="Logout">
+		<input type="submit" value="Logout">
+	</form>
 </body>
 </html>

@@ -11,7 +11,7 @@ import java.security.MessageDigest;
 
 
 public class UtilMethods {
-	String url = "jdbc:oracle:thin:@localhost:1521/orcl.fios-router.home";
+	String url = "jdbc:oracle:thin:@:1521/orcl.fios-router.home";
 	String username = "c##goutham";
 	String password = "Oracle_2020";
 

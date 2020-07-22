@@ -1,9 +1,0 @@
-package com.testing;
-
-public class GetAllTest {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

@@ -4,4 +4,4 @@ values ('Goutham', 'Mitta', 'y', TO_TIMESTAMP('2020-06-04 14:39:12',  'YYYY-MM-D
 
 /*select * from loginattempts order by currentlogin desc;*/
 
-select * from login;
+select * from loginattempts where username = 'Goutham' order by currentlogin desc;

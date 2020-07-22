@@ -4,8 +4,12 @@
   <artifactId>LoginPage</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
   <name>WebProject</name>
   <description>First full-sized web project</description>
+  
+
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -15,6 +19,8 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <fork>true</fork>
+          <executable>C:\Program Files\Java\jdk-13.0.1\bin\javac</executable>
         </configuration>
       </plugin>
       <plugin>
@@ -28,12 +34,27 @@
     
   </build>
   <dependencies>
+    
     <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.7</version>
-      <scope>compile</scope>
+    	<groupId>com.google.code.gson</groupId>
+    	<artifactId>gson</artifactId>
+    	<version>2.7</version>
+    	<scope>compile</scope>
     </dependency>
+    
+    <dependency>
+    	<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+    </dependency>
+    
+    <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+    <scope>provided</scope>
+</dependency>
+    
   </dependencies>
   
 </project>
