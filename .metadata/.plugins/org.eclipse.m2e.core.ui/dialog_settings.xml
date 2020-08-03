@@ -49,6 +49,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.telusko.BeginnerSpringMVC"/>
 			<item value="com.telusko.DemoMVC"/>
 			<item value="com.init.DemoMVC"/>
 			<item value="com.init.DemoAppMVC"/>
@@ -58,6 +59,7 @@
 			<item value="com.init"/>
 		</list>
 		<list key="artifactId">
+			<item value="BeginnerSpringMVC"/>
 			<item value="DemoMVC"/>
 			<item value="DemoAppMVC"/>
 		</list>
