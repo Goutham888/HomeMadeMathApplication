@@ -52,12 +52,12 @@
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="index.jsp">Home</a></li>
-                            <li class="active"><a href="questions">Worksheets</a></li>
+                            <li class="active"><a href="downloadAlg1.jsp">Worksheets</a></li>
                             
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
                                     <li><a href="index.jsp">This is</a></li>
-                                    <li><a href="questions">cool</a></li>
+                                    <li><a href="downloadAlg1.jsp">cool</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -79,7 +79,7 @@
                             Math Donkey
                         </h2>
                         <p>Your one stop shop for free math worksheets</p>
-                        <a href="questions" class="primary-btn">Our Worksheets</a>
+                        <a href="downloadAlg1.jsp" class="primary-btn">Our Worksheets</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                             <ul class="hover__item">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fa fa-exchange"></i></a></li>
+                                <li><a href="#"><i class="fa fa-exchange"></i></a></li> 	
                             </ul>
                         </div>
                         <div class="product__item__text">
