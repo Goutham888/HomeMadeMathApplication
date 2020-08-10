@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Class is also"/>
+		<item key="selection" value="Exponential Growth"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="exponential growth"/>
+			<item value="basics"/>
+			<item value="img"/>
+			<item value="our worksheets"/>
+			<item value="worksheets"/>
 			<item value="class is also"/>
 			<item value="our products"/>
 			<item value="booking re"/>
@@ -18,11 +23,6 @@
 			<item value="col-"/>
 			<item value="col"/>
 			<item value="h"/>
-			<item value="fonts"/>
-			<item value="pages"/>
-			<item value="}"/>
-			<item value="properties"/>
-			<item value="System.out.println(&quot;Receiving messages from MyQueue.\n&quot;);"/>
 		</list>
 		<list key="replacehistory">
 			<item value="lastname"/>

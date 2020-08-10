@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -39,7 +37,7 @@
 </head>
 
 <body>
-    <!-- Page Preloder -->
+   <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
@@ -68,7 +66,8 @@
             </div>
         </div>
     </header>
-    <!-- Services Section Begin -->
+
+<!-- Services Section Begin -->
     <section class="services spad">
         <div class="container">
             <div class="row">
@@ -159,8 +158,14 @@
                 <div class="col-lg-3 p-0 order-lg-13 col-md-6 order-md-13">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
-                        <h4>Exponential Growth and Decay</h4>
-                         <p><a href="expGrowthDecay.jsp">See more</a></p>
+                        <h4>Kuta Software</h4>
+                        <p>
+                        	<form action="download">
+                        		<input type = "hidden" name = "doc" value = "Dividing Polynomials.pdf" />
+                        		<input value="Download" type="submit" class="primary-btn">
+                        	</form>
+                        </p>
+                         	
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-14 col-md-6 order-md-14">
@@ -223,6 +228,7 @@
         </div>
     </section>
     <!-- Services Section End -->
+
     
     <div class="footer__copyright">
         <div class="container">
@@ -245,7 +251,19 @@
             </div>
         </div>
     </div>
-      
+    
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
             <!-- Js Plugins -->
     <script src="resources/js/jquery-3.3.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
@@ -255,7 +273,6 @@
     <script src="resources/js/jquery.slicknav.js"></script>
     <script src="resources/js/owl.carousel.min.js"></script>
     <script src="resources/js/main.js"></script>
-  
 </body>
-</html>    
- 
+
+</html>

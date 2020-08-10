@@ -14,12 +14,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.QuestionsDAO;
+import com.dao.WorksheetsDAO;
 
 @Controller
 public class IndexController {
 	@Autowired
 	QuestionsDAO qdao;
+	
+	@Autowired
+	WorksheetsDAO wdao;
+	
 	List<String> questionList = new ArrayList<String>();
+	
+	@RequestMapping("update")
+	public void addWksht() {
+		wdao.getWorksheet();;
+	}
 	
 	@RequestMapping("questions")
 	public ModelAndView loginPage() {
