@@ -1,11 +1,22 @@
 package com.pages;
 
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
+
+import org.springframework.web.context.support.GenericWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 //needs to extend this abstract class for it to work
 
 //completely replaces web.xml
-public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
+public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+	
+	private String destination = "C:\\Users\\Goutham\\Documents"; 
+	private int MAX_UPLOAD_SIZE = 5 * 1024 * 1024; 
+	
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// idk how imp this is yet
@@ -25,5 +36,6 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
 		//you can specify multiple types of patterns to be routed here b/c its an array of Strings
 		// the / means all url patterns are routed to this 
 	}
+	
 
 }

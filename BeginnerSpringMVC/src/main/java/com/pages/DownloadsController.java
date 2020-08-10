@@ -7,13 +7,15 @@ import java.io.OutputStream;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
- 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.dao.WorksheetsDAO;
  
 @Controller
-@RequestMapping("download")
 public class DownloadsController {
      
     /**
@@ -24,22 +26,27 @@ public class DownloadsController {
     /**
      * Path of the file to be downloaded, relative to application's directory
      */
-    private String filePath = "/resources/downloads/Dividing Polynomials.pdf";
+    private String filePath = "/resources/downloads/";
+    @Autowired
+    private WorksheetsDAO wdao;
      
     /**
      * Method for handling file download request from client
      */
-    @RequestMapping(method = RequestMethod.GET)
-    public void doDownload(HttpServletRequest request,
-            HttpServletResponse response) throws IOException {
+
+    @RequestMapping("download")
+    public void doDownload(HttpServletRequest request, HttpServletResponse response) throws IOException {
  
         // get absolute path of the application
         ServletContext context = request.getServletContext();
         String appPath = context.getRealPath("");
+        String filename = request.getParameter("doc");
+        System.out.println(filename);
+        wdao.getWorksheet(filename);
         //System.out.println("appPath = " + appPath);
  
         // construct the complete absolute path of the file
-        String fullPath = appPath + filePath;      
+        String fullPath = appPath + filePath +filename;      
         System.out.println(fullPath);
         File downloadFile = new File(fullPath);
         FileInputStream inputStream = new FileInputStream(downloadFile);
@@ -72,7 +79,8 @@ public class DownloadsController {
         while ((bytesRead = inputStream.read(buffer)) != -1) {
             outStream.write(buffer, 0, bytesRead);
         }
- 
+        
+        downloadFile.delete();
         inputStream.close();
         outStream.close();
  

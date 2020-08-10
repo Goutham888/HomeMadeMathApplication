@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Topics We Have</h2>
+                        <h2>Exponential Growth and Decay</h2>
                     </div>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Kuta Software</h4>
                         <p>
-                        	<form action="download">
+                        	<form action="download"> 	
                         		<input type = "hidden" name = "doc" value = "Dividing Polynomials.pdf" />
                         		<input value="Download" type="submit" class="primary-btn">
                         	</form>

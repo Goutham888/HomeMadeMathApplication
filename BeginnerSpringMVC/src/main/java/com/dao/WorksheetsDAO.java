@@ -48,7 +48,7 @@ public class WorksheetsDAO {
 			ps.setString(2, "Algebra1");
 			ps.setString(3, "DividingPoly");
 			
-			ps.setString(4, "Dividing polynomials");
+			ps.setString(4, "Dividing Polynomials.pdf");
 			//ps.setBinaryStream(5, fis, (int)file.length());
 			ps.setBytes(5, pdf);
 			System.out.println(ps.executeUpdate());
@@ -62,7 +62,7 @@ public class WorksheetsDAO {
 		} 
 		
 	}
-	public void getWorksheet() {
+	public void getWorksheet(String filename) {
 		try {
 			Class.forName("org.postgresql.Driver");
 			Connection con = DriverManager.getConnection(jdbcUrl, userName, password);
@@ -72,13 +72,13 @@ public class WorksheetsDAO {
 			
 			//File file = new File("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\/resources/downloads/Dividing Polynomials.pdf");
 			//FileInputStream fis = new FileInputStream(file);
-			PreparedStatement ps = con.prepareStatement("select file from sauce2 where topic='DividingPoly'");
-			//ps.setInt(1, 1);
+			PreparedStatement ps = con.prepareStatement("select file from sauce2 where title="+filename);
+			
 			
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
 				byte[] bytes = rs.getBytes("file");
-				OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\Documents\\out.pdf");
+				OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\"+filename+".pdf");
 				out.write(bytes);
 				out.close();
 			}
