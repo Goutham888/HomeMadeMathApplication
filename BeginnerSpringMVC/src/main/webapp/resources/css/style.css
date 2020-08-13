@@ -118,7 +118,7 @@ ol {
 
 .section-title h2 {
 	font-size: 40px;
-	color: #353535;
+	color: rgb(255,255,255);
 	font-weight: 700;
 	margin-bottom: 5px;
 }
@@ -650,11 +650,11 @@ ol {
 }
 
 .counter .section-title h2 {
-	color: #ffffff;
+	color: rgb(255,255,255);
 }
 
 .counter .section-title p {
-	color: #ffffff;
+	color: rgb(255,255,255);
 }
 
 .counter__item {

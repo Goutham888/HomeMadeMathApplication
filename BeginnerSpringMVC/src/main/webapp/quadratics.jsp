@@ -95,7 +95,7 @@
                 <div class="col-lg-3 p-0 order-lg-14 col-md-6 order-md-14">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
-                        <h4>ExpGrowthDecay1</h4>
+                        <h4>Quadratics1</h4>
                         <p>
                         	<form action="download"> 	
                         		<!-- <input type = "hidden" name = "doc" value = "ExpGrowthDecay.pdf" /> -->

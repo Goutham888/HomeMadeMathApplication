@@ -167,7 +167,7 @@
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Quadratics</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="quadratics.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-15 col-md-6 order-md-15">

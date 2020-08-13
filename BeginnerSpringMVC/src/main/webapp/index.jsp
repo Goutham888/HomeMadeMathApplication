@@ -78,7 +78,6 @@
                             <span>Welcome To</span>
                             Math Donkey
                         </h2>
-                        <p>Your one stop shop for free math worksheets</p>
                         <a href="downloadAlg1.jsp" class="primary-btn">Our Worksheets</a>
                     </div>
                 </div>
@@ -110,9 +109,9 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Algebra 1</a></h6>
+                            <h6>Algebra 1</h6>
                             <div class="price">
-                                <a href="questions">See more</a>
+                                <a href="downloadAlg.jsp">See more</a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +176,7 @@
     <!-- Products Section End -->
 
     <!-- Counter Section Begin -->
-    <section class="counter spad set-bg" data-setbg="img/counter-bg.jpg">
+    <section class="products spad" data-setbg="img/counter-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -194,7 +193,7 @@
                             <img src="img/icon/ci-1.png" alt="">
                         </div>
                         <div class="counter__item__text">
-                            <h2 class="project-counter">0</h2>
+                            <h2 class="project-counter">2</h2>
                             <strong>+</strong>
                             <p>All Project</p>
                         </div>

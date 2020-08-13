@@ -41,14 +41,14 @@ public class WorksheetsDAO {
 			//File file = new File("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\Dividing Polynomials.pdf");
 			//FileInputStream fis = new FileInputStream(file);
 			
-			Path pdfPath = Paths.get("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\Dividing Polynomials.pdf");
+			Path pdfPath = Paths.get("C:\\Users\\Goutham\\Documents\\MathDonkey\\Alg1\\ExpGrowthDecay1.pdf");
 			byte[] pdf = Files.readAllBytes(pdfPath);
 			PreparedStatement ps = con.prepareStatement("insert into sauce2 values(?, ?, ?, ?, ?)");
-			ps.setInt(1, 1);
+			ps.setInt(1, 2);
 			ps.setString(2, "Algebra1");
-			ps.setString(3, "DividingPoly");
+			ps.setString(3, "ExpGrowthDecay");
 			
-			ps.setString(4, "Dividing Polynomials.pdf");
+			ps.setString(4, "ExpGrowthDecay1.pdf");
 			//ps.setBinaryStream(5, fis, (int)file.length());
 			ps.setBytes(5, pdf);
 			System.out.println(ps.executeUpdate());
@@ -62,7 +62,9 @@ public class WorksheetsDAO {
 		} 
 		
 	}
-	public void getWorksheet(String filename) {
+
+	public byte[] getWorksheet(String filename) {
+		byte[] bytes=new byte[10];
 		try {
 			Class.forName("org.postgresql.Driver");
 			Connection con = DriverManager.getConnection(jdbcUrl, userName, password);
@@ -72,25 +74,30 @@ public class WorksheetsDAO {
 			
 			//File file = new File("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\/resources/downloads/Dividing Polynomials.pdf");
 			//FileInputStream fis = new FileInputStream(file);
-			PreparedStatement ps = con.prepareStatement("select file from sauce2 where title="+filename);
-			
+			PreparedStatement ps = con.prepareStatement("select file from sauce2 where title=?");
+			ps.setString(1, filename);
 			
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
-				byte[] bytes = rs.getBytes("file");
-				OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\"+filename+".pdf");
-				out.write(bytes);
-				out.close();
+				bytes = rs.getBytes("file");
+				//OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\"+filename+".pdf");
+				//OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\WebPageProject\\BeginnerSpringMVC\\src\\main\\webapp\\resources\\downloads\\Dividing Polynomials.pdf");
+				
+				//out.write(bytes);
+				//out.close();
+				ps.close();
+				return bytes;
 			}
 			
-			
-			
 			ps.close();
+			return bytes;
+			
+			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			
+			return bytes;
 		} 
 		
 	}
