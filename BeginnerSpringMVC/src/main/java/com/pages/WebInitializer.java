@@ -13,10 +13,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 //completely replaces web.xml
 
 public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-	
-	private String destination = "C:\\Users\\Goutham\\Documents"; 
-	private int MAX_UPLOAD_SIZE = 5 * 1024 * 1024; 
-	
+
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// idk how imp this is yet

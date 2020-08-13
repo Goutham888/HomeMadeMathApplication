@@ -56,12 +56,7 @@
                             <li class="active"><a href="index.jsp">Home</a></li>
                             <li class="active"><a href="downlad.jsp">Worksheets</a></li>
                             
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="index.jsp">This is</a></li>
-                                    <li><a href="questions">cool</a></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                     </nav>
                 </div>
@@ -74,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Topics We Have</h2>
+                        <h2 style="color:black">Algebra 1 Topics</h2>
                     </div>
                 </div>
             </div>
@@ -83,77 +78,63 @@
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Solving Equations and Inequalities</h4>
-                         <p><a href="download">See more</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-3 p-0 order-lg-3 col-md-6 order-md-4">
-                    <div class="services__text">
-                        <img src="img/icon/si-1.png" alt="">
-                        <h4>Working with units</h4>
-                         <p><a href="download">Units</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-4 col-md-6 order-md-3">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Linear equations and graphs</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
-                </div>
-                <div class="col-lg-3 p-0 order-lg-6 col-md-6 order-md-5">
-                    <div class="services__text">
-                        <img src="img/icon/si-1.png" alt="">
-                        <h4>Forms of linear equations</h4>
-                         <p><a href="download">See more</a></p>
-                    </div>
-                </div>
+                </div>	
                 <div class="col-lg-3 p-0 order-lg-5 col-md-6 order-md-6">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Systems of equations</h4>
-                         <p><a href="download">Click here to download file</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-8 col-md-6 order-md-8">
                    <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Inequalities</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-7 col-md-6 order-md-7">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Functions</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-9 col-md-6 order-md-9">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Sequences</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-10 col-md-6 order-md-10">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Absolute Value functions</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-11 col-md-6 order-md-11">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Piecewise functions</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-12 col-md-6 order-md-12">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Exponents and radicals</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-13 col-md-6 order-md-13">
@@ -170,55 +151,42 @@
                          <p><a href="quadratics.jsp">See more</a></p>
                     </div>
                 </div>
-                <div class="col-lg-3 p-0 order-lg-15 col-md-6 order-md-15">
-                    <div class="services__text">
-                        <img src="img/icon/si-1.png" alt="">
-                        <h4>Quadratic functions and equations</h4>
-                         <p><a href="download">See more</a></p>
-                    </div>
-                </div>
                 <div class="col-lg-3 p-0 order-lg-16 col-md-6 order-md-16">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Irrational numbers</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-17 col-md-6 order-md-17">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Polynomials</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-18 col-md-6 order-md-18">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Radical expressions and equations</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-19 col-md-6 order-md-19">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Rational expressions and equations</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-20 col-md-6 order-md-20">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Statistics</h4>
-                         <p><a href="download">See more</a></p>
+                         <p><a href="comingSoon.jsp">See more</a></p>
                     </div>
                 </div>
-                <div class="col-lg-3 p-0 order-lg-21 col-md-6 order-md-21">
-                    <div class="services__text">
-                        <img src="img/icon/si-1.png" alt="">
-                        <h4>Word problems</h4>
-                         <p><a href="download">See more</a></p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

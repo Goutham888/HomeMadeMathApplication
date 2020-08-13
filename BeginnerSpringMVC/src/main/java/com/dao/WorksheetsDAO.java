@@ -29,40 +29,63 @@ public class WorksheetsDAO {
 	String port = "5432";
 	String dbName="quizdb";
 	String jdbcUrl = "jdbc:postgresql://"+hostname+":5432/quizdb";
+	int[] stats = new int[]{0,0,0,0};
+	int alg1Stat = 0;
+	int trigStat=0;
+	int alg2Stat=0;
+	int calcABStat = 0;
 	
-	public void addWorksheet() {
+	public int[] getStats() {
 		try {
 			Class.forName("org.postgresql.Driver");
 			Connection con = DriverManager.getConnection(jdbcUrl, userName, password);
 			
 			System.out.println("Got DB connection");
 			
+			PreparedStatement ps = con.prepareStatement("select file from sauce2 where course=?");
+			ps.setString(1, "Algebra1");
 			
-			//File file = new File("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\Dividing Polynomials.pdf");
-			//FileInputStream fis = new FileInputStream(file);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				alg1Stat++;
+			}
 			
-			Path pdfPath = Paths.get("C:\\Users\\Goutham\\Documents\\MathDonkey\\Alg1\\ExpGrowthDecay1.pdf");
-			byte[] pdf = Files.readAllBytes(pdfPath);
-			PreparedStatement ps = con.prepareStatement("insert into sauce2 values(?, ?, ?, ?, ?)");
-			ps.setInt(1, 2);
-			ps.setString(2, "Algebra1");
-			ps.setString(3, "ExpGrowthDecay");
+			PreparedStatement ps2 = con.prepareStatement("select file from sauce2 where course=?");
+			ps2.setString(1, "Trig");
 			
-			ps.setString(4, "ExpGrowthDecay1.pdf");
-			//ps.setBinaryStream(5, fis, (int)file.length());
-			ps.setBytes(5, pdf);
-			System.out.println(ps.executeUpdate());
-			ps.close();
-			//fis.close();
+			ResultSet rs2 = ps2.executeQuery();
+			while(rs2.next()) {
+				trigStat++;
+			}
 			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			PreparedStatement ps3 = con.prepareStatement("select file from sauce2 where course=?");
+			ps3.setString(1, "Algebra2");
 			
-		} 
-		
+			ResultSet rs3 = ps3.executeQuery();
+			while(rs3.next()) {
+				alg2Stat++;
+			}
+			
+			PreparedStatement ps4 = con.prepareStatement("select file from sauce2 where course=?");
+			ps4.setString(1, "CalcAB");
+			
+			ResultSet rs4 = ps4.executeQuery();
+			while(rs4.next()) {
+				calcABStat++;
+			}
+			
+			stats[1]=trigStat;
+			stats[2]=alg2Stat;
+			stats[3]=calcABStat;
+			stats[0]=alg1Stat;
+			return stats;
+		}catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return stats;
+			} 
 	}
-
+	
 	public byte[] getWorksheet(String filename) {
 		byte[] bytes=new byte[10];
 		try {
@@ -101,4 +124,38 @@ public class WorksheetsDAO {
 		} 
 		
 	}
+	public void addWorksheet() {
+		try {
+			Class.forName("org.postgresql.Driver");
+			Connection con = DriverManager.getConnection(jdbcUrl, userName, password);
+			
+			System.out.println("Got DB connection");
+			
+			
+			//File file = new File("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\Dividing Polynomials.pdf");
+			//FileInputStream fis = new FileInputStream(file);
+			
+			Path pdfPath = Paths.get("C:\\Users\\Goutham\\Documents\\MathDonkey\\Alg1\\ExpGrowthDecay1.pdf");
+			byte[] pdf = Files.readAllBytes(pdfPath);
+			PreparedStatement ps = con.prepareStatement("insert into sauce2 values(?, ?, ?, ?, ?)");
+			ps.setInt(1, 2);
+			ps.setString(2, "Algebra1");
+			ps.setString(3, "ExpGrowthDecay");
+			
+			ps.setString(4, "ExpGrowthDecay1.pdf");
+			//ps.setBinaryStream(5, fis, (int)file.length());
+			ps.setBytes(5, pdf);
+			System.out.println(ps.executeUpdate());
+			ps.close();
+			//fis.close();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+		} 
+		
+	}
+
+	
 }

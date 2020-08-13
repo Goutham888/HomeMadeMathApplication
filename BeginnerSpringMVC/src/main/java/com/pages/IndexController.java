@@ -27,6 +27,14 @@ public class IndexController {
 	WorksheetsDAO wdao;
 	
 	List<String> questionList = new ArrayList<String>();
+	@RequestMapping("/")
+	public ModelAndView indexPage() {
+		int[] stats = wdao.getStats();
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("index");
+		mv.addObject("stats",stats);
+		return mv;
+	}
 	
 	@RequestMapping("update")
 	public void addWksht() {
@@ -38,7 +46,7 @@ public class IndexController {
     	System.out.println("Hey I got a file");
     	return "index.jsp";
     }
-	
+	/*I just wanna keep it for code parts
 	@RequestMapping("questions")
 	public ModelAndView loginPage() {
 		
@@ -55,7 +63,7 @@ public class IndexController {
 		mv.addObject("questionList",questionList);
 		return mv;
 	}
-	
+	*/
 	
 	@RequestMapping("checkAnswers")
 	public ModelAndView checkAnswers(@RequestParam("Q1") String q1, @RequestParam("Q2") String q2, @RequestParam("Q3") String q3, @RequestParam("Q4") String q4, @RequestParam("Q5") String q5) {
@@ -73,6 +81,6 @@ public class IndexController {
 		return mv;
 		
 	}
-	
+	 
 	
 }

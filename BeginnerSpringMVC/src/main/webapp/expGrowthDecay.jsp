@@ -54,12 +54,7 @@
                             <li class="active"><a href="index.jsp">Home</a></li>
                             <li class="active"><a href="downlad.jsp">Worksheets</a></li>
                             
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="index.jsp">This is</a></li>
-                                    <li><a href="questions">cool</a></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                     </nav>
                 </div>
@@ -73,29 +68,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Exponential Growth and Decay</h2>
+                        <h2 style="color:black">Exponential Growth and Decay</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <!-- just an example
                 <div class="col-lg-3 p-0 order-lg-13 col-md-6 order-md-13">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Kuta Software</h4>
                         <p>
                         	<form action="download"> 	
-                        		<!-- <input type = "hidden" name = "doc" value = "Dividing Polynomials.pdf" /> -->
+                        		<input type = "hidden" name = "doc" value = "Dividing Polynomials.pdf" />
                         		<input type="hidden" name="filename" value="Dividing Polynomials.pdf">
                         		<input value="Download" type="submit" class="primary-btn">
                         	</form>
                         </p>
                          	
                     </div>
-                </div>
+                </div> -->
+                
                 <div class="col-lg-3 p-0 order-lg-14 col-md-6 order-md-14">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
-                        <h4>ExpGrowthDecay1</h4>
+                        <h4>Exponential Growth and Decay 1</h4>
                         <p>
                         	<form action="download"> 	
                         		<!-- <input type = "hidden" name = "doc" value = "ExpGrowthDecay.pdf" /> -->
