@@ -1,18 +1,11 @@
 INDEX VERSION 1.4+C:\Users\Goutham\WebPageProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1856545956.index
 622316293.index
-2667695547.index
-1884652132.index
-2478935634.index
-3997866548.index
-2501676878.index
-2740678499.index
 2203274743.index
-2179516831.index
+2740678499.index
+1884652132.index
+2667695547.index
+4225458505.index
+2718380188.index
 2030875813.index
-419228483.index
 3595931039.index
 4131870369.index
-1533316478.index
-2478935634.index
-2718380188.index

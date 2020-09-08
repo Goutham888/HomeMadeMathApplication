@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Exponen"/>
+		<item key="selection" value="Topics We Cover"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="topics we cover"/>
+			<item value="Quad"/>
+			<item value="&lt;a"/>
+			<item value="class"/>
+			<item value="Topics We Cover"/>
+			<item value="Forms of Linear equations"/>
+			<item value="units"/>
+			<item value="Quadratic"/>
+			<item value="Quadratics"/>
 			<item value="exponen"/>
 			<item value="exponential"/>
 			<item value="exponential growth"/>
 			<item value="basics"/>
 			<item value="img"/>
 			<item value="our worksheets"/>
-			<item value="worksheets"/>
-			<item value="class is also"/>
-			<item value="our products"/>
-			<item value="booking re"/>
-			<item value=".hero__text p"/>
-			<item value=".hero__text"/>
-			<item value=".hero__"/>
-			<item value="hero"/>
-			<item value="col-"/>
 		</list>
 		<list key="replacehistory">
 			<item value="lastname"/>

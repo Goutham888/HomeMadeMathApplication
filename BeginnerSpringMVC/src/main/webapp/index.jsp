@@ -9,7 +9,7 @@
     <meta name="keywords" content="AutoMotive, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Math Donkey</title>
+    <title>Homemade Math</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
@@ -55,7 +55,8 @@
                         <ul>
                             <li class="active"><a href="index.jsp">Home</a></li>
                             <li class="active"><a href="downloadAlg1.jsp">Worksheets</a></li>
-                            
+                            <li class="active"><a href="login.jsp">Login</a></li>
+                            <li class="active"><a href="signup.jsp">Sign Up</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -72,7 +73,7 @@
                     <div class="hero__text">
                         <h2>
                             <span>Welcome To</span>
-                            Math Donkey
+                            Homemade Math
                         </h2>
                         <a href="downloadAlg1.jsp" class="primary-btn">Our Worksheets</a>
                     </div>

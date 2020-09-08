@@ -7,4 +7,5 @@
   <module moduleId="org.eclipse.jst.jee.server:AWSTestProject" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSPDemo" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:BeginnerSpringMVC" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SpringMVCandJQueryDataTable" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

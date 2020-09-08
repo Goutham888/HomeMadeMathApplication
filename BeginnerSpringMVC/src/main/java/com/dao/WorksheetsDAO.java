@@ -78,6 +78,12 @@ public class WorksheetsDAO {
 			stats[2]=alg2Stat;
 			stats[3]=calcABStat;
 			stats[0]=alg1Stat;
+			
+			alg1Stat = 0;
+			trigStat=0;
+			alg2Stat=0;
+			calcABStat = 0;
+			
 			return stats;
 		}catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -124,6 +130,7 @@ public class WorksheetsDAO {
 		} 
 		
 	}
+	
 	public void addWorksheet() {
 		try {
 			Class.forName("org.postgresql.Driver");
