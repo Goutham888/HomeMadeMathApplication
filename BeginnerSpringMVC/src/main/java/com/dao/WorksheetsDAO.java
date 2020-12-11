@@ -23,12 +23,12 @@ public class WorksheetsDAO {
 	String password = "Oracle_2020";*/
 	
 
-	String userName = "Goutham_Mitta";
-	String password = "PostgreSQL_2230";
-	String hostname = "quizdb.cm6lyukuizi2.us-east-1.rds.amazonaws.com";
-	String port = "5432";
-	String dbName="quizdb";
-	String jdbcUrl = "jdbc:postgresql://"+hostname+":5432/quizdb";
+	String userName = "postgres";
+	String password = "PostgreSQL_2230?";
+	String hostname = "localhost";
+	String port = "5433";
+	String dbName="postgres";
+	String jdbcUrl = "jdbc:postgresql://"+hostname+":"+port+"/"+dbName;
 	int[] stats = new int[]{0,0,0,0};
 	int alg1Stat = 0;
 	int trigStat=0;
@@ -36,60 +36,7 @@ public class WorksheetsDAO {
 	int calcABStat = 0;
 	
 	public int[] getStats() {
-		try {
-			Class.forName("org.postgresql.Driver");
-			Connection con = DriverManager.getConnection(jdbcUrl, userName, password);
-			
-			System.out.println("Got DB connection");
-			
-			PreparedStatement ps = con.prepareStatement("select file from sauce2 where course=?");
-			ps.setString(1, "Algebra1");
-			
-			ResultSet rs = ps.executeQuery();
-			while(rs.next()) {
-				alg1Stat++;
-			}
-			
-			PreparedStatement ps2 = con.prepareStatement("select file from sauce2 where course=?");
-			ps2.setString(1, "Trig");
-			
-			ResultSet rs2 = ps2.executeQuery();
-			while(rs2.next()) {
-				trigStat++;
-			}
-			
-			PreparedStatement ps3 = con.prepareStatement("select file from sauce2 where course=?");
-			ps3.setString(1, "Algebra2");
-			
-			ResultSet rs3 = ps3.executeQuery();
-			while(rs3.next()) {
-				alg2Stat++;
-			}
-			
-			PreparedStatement ps4 = con.prepareStatement("select file from sauce2 where course=?");
-			ps4.setString(1, "CalcAB");
-			
-			ResultSet rs4 = ps4.executeQuery();
-			while(rs4.next()) {
-				calcABStat++;
-			}
-			
-			stats[1]=trigStat;
-			stats[2]=alg2Stat;
-			stats[3]=calcABStat;
-			stats[0]=alg1Stat;
-			
-			alg1Stat = 0;
-			trigStat=0;
-			alg2Stat=0;
-			calcABStat = 0;
-			
-			return stats;
-		}catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				return stats;
-			} 
+		return new int[] {1,2,3,4};
 	}
 	
 	public byte[] getWorksheet(String filename) {
@@ -103,12 +50,12 @@ public class WorksheetsDAO {
 			
 			//File file = new File("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\/resources/downloads/Dividing Polynomials.pdf");
 			//FileInputStream fis = new FileInputStream(file);
-			PreparedStatement ps = con.prepareStatement("select file from sauce2 where title=?");
+			PreparedStatement ps = con.prepareStatement("select pdf from worksheets where filename=?");
 			ps.setString(1, filename);
 			
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
-				bytes = rs.getBytes("file");
+				bytes = rs.getBytes("pdf");
 				//OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\WebPageProject\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\BeginnerSpringMVC\\resources\\downloads\\"+filename+".pdf");
 				//OutputStream out = new FileOutputStream("C:\\Users\\Goutham\\WebPageProject\\BeginnerSpringMVC\\src\\main\\webapp\\resources\\downloads\\Dividing Polynomials.pdf");
 				
@@ -144,8 +91,8 @@ public class WorksheetsDAO {
 			
 			Path pdfPath = Paths.get("C:\\Users\\Goutham\\Documents\\MathDonkey\\Alg1\\ExpGrowthDecay1.pdf");
 			byte[] pdf = Files.readAllBytes(pdfPath);
-			PreparedStatement ps = con.prepareStatement("insert into sauce2 values(?, ?, ?, ?, ?)");
-			ps.setInt(1, 2);
+			PreparedStatement ps = con.prepareStatement("insert into worksheets values(?, ?, ?, ?, ?)");
+			ps.setInt(1, 1);
 			ps.setString(2, "Algebra1");
 			ps.setString(3, "ExpGrowthDecay");
 			

@@ -1,0 +1,16 @@
+CREATE TABLE public."Database_Version"
+(
+    "Date" date NOT NULL,
+    "Version" character varying(20)[] COLLATE pg_catalog."default" NOT NULL
+)
+
+	
+CREATE TABLE public.worksheets
+(
+    "DocID" smallint,
+    "DocFamily" character varying(50)[] COLLATE pg_catalog."default",
+    "DocTopic" character varying(50)[] COLLATE pg_catalog."default",
+    "Filename" character varying(50)[] COLLATE pg_catalog."default",
+    "File" bytea[]
+)
+

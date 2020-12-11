@@ -26,12 +26,12 @@ public class UserDAO {
 	String password = "Oracle_2020";*/
 	
 
-	String userName = "Goutham_Mitta";
-	String password = "PostgreSQL_2230";
-	String hostname = "quizdb.cm6lyukuizi2.us-east-1.rds.amazonaws.com";
-	String port = "5432";
-	String dbName="quizdb";
-	String jdbcUrl = "jdbc:postgresql://"+hostname+":5432/quizdb";
+	String userName = "postgres";
+	String password = "PostgreSQL_2230?";
+	String hostname = "localhost";
+	String port = "5433";
+	String dbName="postgres";
+	String jdbcUrl = "jdbc:postgresql://"+hostname+":"+port+"/"+dbName;
 	
 	public void addUser(String uname, String pass, String firstName, String lastName, String email) {
 		try {
@@ -66,7 +66,7 @@ public class UserDAO {
 			
 			System.out.println("Got DB connection");
 			
-			PreparedStatement ps = con.prepareStatement("select * from users where uname=? and pass=?");
+			PreparedStatement ps = con.prepareStatement("select * from users where username=? and password=?");
 			ps.setString(1, uname);
 			
 			ps.setString(2, getSHA(pass));

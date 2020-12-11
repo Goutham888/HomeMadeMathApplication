@@ -1,0 +1,1 @@
+insert into data_version values (todate,'1.0');
