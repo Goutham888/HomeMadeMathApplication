@@ -15,16 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- Css Styles 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <!-- Css Styles from the template-->
     
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet" media="screen">
@@ -72,7 +63,8 @@
                 <div class="col-lg-12">
                     <div class="section-title">
                         <h2 style="color:black">Sign Up</h2>
-                        <br>
+                        <br>	
+                        	<!-- Just sends inputted data back to UserController.java -->
                        		<form action="signup" method="post">
                        			<p>	
                        				You don't need to sign up to download the worksheets on our websites. 
@@ -123,6 +115,7 @@
             </div>
         </div>
     </footer>
+    <!-- All from the template -->
     <div class="footer__copyright">
         <div class="container">
             <div class="row">
@@ -146,7 +139,7 @@
     </div>
     <!-- Footer Section End -->
 
-    <!-- Js Plugins -->
+    <!-- Js Plugins from the template-->
     <script src="resources/js/jquery-3.3.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/jquery.magnific-popup.min.js"></script>

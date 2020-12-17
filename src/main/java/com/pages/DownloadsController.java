@@ -32,16 +32,21 @@ public class DownloadsController {
      * Path of the file to be downloaded, relative to application's directory
      */
     private String filePath = "/resources/downloads/";
+   
     @Autowired
     private WorksheetsDAO wdao;
      
     /**
      * Method for handling file download request from client
      */
-
+    
+    //Method for opening up download screen for PDF
+    //Needs more research to understand the nuances of what's going on
     @RequestMapping("download")
     public @ResponseBody HttpEntity<byte[]> downloadB(@RequestParam String filename) throws IOException {
-        byte[] document = wdao.getWorksheet(filename);
+        //The document is returned as a byte array from the DB
+    	byte[] document = wdao.getWorksheet(filename);
+    	//The HttpHeader is set to the file's content and returned
         HttpHeaders header = new HttpHeaders();
         header.setContentType(new MediaType("application", "pdf"));
         header.set("Content-Disposition", "inline; filename="+filename);

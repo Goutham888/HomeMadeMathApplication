@@ -28,7 +28,7 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
 	@Override
 	protected String[] getServletMappings() {
-		// <url-pattern>/<url-pattern> replacement
+		// <url-pattern>/<url-pattern> (default landing) replacement
 		return new String[] {"/"}; 
 		//you can specify multiple types of patterns to be routed here b/c its an array of Strings
 		// the / means all url patterns are routed to this 

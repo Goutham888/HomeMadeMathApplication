@@ -7,22 +7,13 @@
     <meta name="keywords" content="AutoMotive, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Math Donkey</title>
+    <title>HomeMade Math</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- Css Styles 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <!-- Css Styles from the Template-->
     
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet" media="screen">
@@ -88,13 +79,17 @@
                          	
                     </div>
                 </div> -->
+                
                 <div class="col-lg-3 p-0 order-lg-14 col-md-6 order-md-14">
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Factoring Quadratics and Quartics</h4>
                         <p>
+                        	<!-- sends the filename back to the DownloadsController.java for processing -->
                         	<form action="download"> 	
                         		<!-- <input type = "hidden" name = "doc" value = "ExpGrowthDecay.pdf" /> -->
+                        		<!-- This file does not currently exist in the DB so it won't work
+                        			 Part of the problem with the Oracle to PostgreSQL switch -->
                         		<input type="hidden" name="filename" value="Factoring Quadratics and Quartics.pdf">
                         		<input value="Download" type="submit" class="primary-btn">
                         	</form>

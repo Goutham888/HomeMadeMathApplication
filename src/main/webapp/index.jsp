@@ -2,7 +2,12 @@
     pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="zxx">
-
+<!-- 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+This is the first page of the HomeMadeMath application.
+From here, you can login, sign up, or go to downloads to get a worksheet
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ -->
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="AutoMotive Template">
@@ -15,17 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- Css Styles 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">-->
-    
+    <!-- These are all of the CSS file relations. 
+    	 All of them are located in the resources folder that's inside webapp -->
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/elegant-icons.css" rel="stylesheet" media="screen">
@@ -53,6 +49,7 @@
                 <div class="col-lg-7">
                     <nav class="header__menu">
                         <ul>
+                        	<!-- These are just a few links that exist in the menu to important sites -->
                             <li class="active"><a href="index.jsp">Home</a></li>
                             <li class="active"><a href="downloadAlg1.jsp">Worksheets</a></li>
                             <li class="active"><a href="login.jsp">Login</a></li>
@@ -75,6 +72,7 @@
                             <span>Welcome To</span>
                             Homemade Math
                         </h2>
+                        <!-- Another link sending you to the download page -->
                         <a href="downloadAlg1.jsp" class="primary-btn">Our Worksheets</a>
                     </div>
                 </div>
@@ -105,6 +103,7 @@
                                 <li><a href="#"><i class="fa fa-exchange"></i></a></li> 	
                             </ul>
                         </div>
+                        <!-- So only the Algebra 1 page works b/c I didn't write worksheets for the rest of them -->
                         <div class="product__item__text">
                             <h6>Algebra 1</h6>
                             <div class="price">
@@ -124,6 +123,7 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
+                        <!-- All the links that don't actually have sites they link to will go to the coming soon page -->
                             <h6><a href="#">Trigonometry</a></h6>
                             <div class="price">
                                 <a href="comingSoon.jsp">See more</a>
@@ -190,6 +190,10 @@
                             <img src="img/icon/ci-1.png" alt="">
                         </div>
                         <div class="counter__item__text">
+                        <!-- ${stats[0]}: Stats is an int array that is filled with the data in the database of
+                        how many of each topic we have CURRENTLY NOT FINISHED b/c I had to remove the code
+                        to allow the switch to PostgreSQL be smooth. See IndexController.java for the code
+                        and more info. -->
                             <h2 class="project-counter"> ${stats[0]}</h2>
                             <p style="color:black">Algebra 1</p>
                         </div>
@@ -243,7 +247,7 @@
             <div class="footer__text" >
                 <div class="row" >
                     
-                    
+                    <!-- I really just stole this from the template and put it my name -->
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__news">
                             <h5>Contact Us</h5>
@@ -263,6 +267,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <!-- this came with the template and I'm not removing it -->
                     <div class="footer__copyright__text">
                         <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
                     </div>

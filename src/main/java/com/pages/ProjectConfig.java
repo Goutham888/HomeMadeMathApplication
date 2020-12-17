@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 
 /*
- 	This completely replaces the telusko-servlet.xml file
+ 	This completely replaces the servlet.xml file
  	The @Configuration makes this a config file
  	The @ComponentScan searches for controllers in the specified package
  	More packages can be added  just as  a list.
@@ -22,6 +22,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan({"com.pages", "com.dao"})
 @EnableWebMvc
 public class ProjectConfig implements WebMvcConfigurer{
+	//not entirely sure what a bean is
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver vr = new InternalResourceViewResolver();
@@ -34,7 +35,7 @@ public class ProjectConfig implements WebMvcConfigurer{
 	
 	
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-
+    	//Telling it that this path is a valid place to find resources
     	registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
     

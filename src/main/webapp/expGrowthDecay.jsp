@@ -13,16 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- Css Styles 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <!-- Css Styles came with the template -->
     
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet" media="screen">
@@ -93,10 +84,11 @@
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Exponential Growth and Decay 1</h4>
+                        <!-- sent to the download request mapping in DownloadsController.java -->
                         <p>
                         	<form action="download"> 	
                         		<!-- <input type = "hidden" name = "doc" value = "ExpGrowthDecay.pdf" /> -->
-                        		<input type="hidden" name="filename" value="ExpGrowthDecay1.pdf">
+                        		<input type="hidden" name="filename" value="TestDocument.pdf">
                         		<input value="Download" type="submit" class="primary-btn">
                         	</form>
                         </p>
@@ -109,7 +101,7 @@
     </section>
     <!-- Services Section End -->
 
-    
+    <!-- All from the template -->
     <div class="footer__copyright">
         <div class="container">
             <div class="row">
@@ -144,7 +136,7 @@
     </div>
     <!-- Search End -->
 
-            <!-- Js Plugins -->
+            <!-- Js Plugins from the template-->
     <script src="resources/js/jquery-3.3.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/jquery.magnific-popup.min.js"></script>

@@ -14,18 +14,8 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
-    <!-- Css Styles 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">-->
-    
+	
+	<!-- css file locations from the template-->
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/elegant-icons.css" rel="stylesheet" media="screen">
@@ -73,6 +63,8 @@
                     <div class="section-title">
                         <h2 style="color:black">Login</h2>
                         <br>
+                        <!-- this is the input area for the login info -->
+                        <!-- method is post b/c im sending into the code for further analysis -->
                             	<form action="login" method="post">
 									<p>
 										Enter username: <input type="text" name="uname">
@@ -81,8 +73,12 @@
 										<br><br>
 										<input type="submit" value="login">
 										<br><br>
+										<!-- the incorrect display tells you that you typed it in wrong.  --> 
+										<!-- incorrectDisplay is assigned a value of nothing or "Incorrect Credentials"-->
+										<!-- This is displayed if you get the password wrong once -->
 										<p style="color:red">${incorrectDisplay}</p>
 										<br><br>
+										<!-- Link to Sign up if it is needed  -->
 										Don't have an account? <a href="signup.jsp">Sign up!</a>
 										
 									</p>
@@ -95,7 +91,7 @@
     <!-- Hero Section End -->
 
    
-
+	<!-- All from the template -->
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" style="background-color:black;">
     <!-- data-setbg="img/footer-bg.jpg"  this goes inside the footer tag upstairs-->
@@ -142,7 +138,7 @@
     </div>
     <!-- Footer Section End -->
 
-    <!-- Js Plugins -->
+    <!-- Js Plugins from the template-->
     <script src="resources/js/jquery-3.3.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/jquery.magnific-popup.min.js"></script>

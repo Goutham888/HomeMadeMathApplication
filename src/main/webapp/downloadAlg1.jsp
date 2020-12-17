@@ -15,17 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- Css Styles 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">-->
-    
+    <!-- Css Styles came with the template-->    
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="resources/css/elegant-icons.css" rel="stylesheet" media="screen">
@@ -73,6 +63,10 @@
                     </div>
                 </div>
             </div>
+            <!-- This is a table of topics that is taken to different places -->
+            <!-- I need to put more effort into making sure this looks good -->
+            <!-- Right now they're all out of order and most are linked to the coming soon page except for  
+            	 exponential growth and decay and quadratics-->
             <div class="row">
                 <div class="col-lg-3 p-0 order-lg-2 col-md-6 order-md-2">
                     <div class="services__text">
@@ -148,7 +142,7 @@
                     <div class="services__text">
                         <img src="img/icon/si-1.png" alt="">
                         <h4>Quadratics</h4>
-                         <p><a href="Algebra1/quadratics.jsp">See more</a></p>
+                         <p><a href="quadratics.jsp">See more</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 p-0 order-lg-16 col-md-6 order-md-16">
@@ -214,7 +208,7 @@
         </div>
     </div>
       
-            <!-- Js Plugins -->
+    <!-- Js Plugins came with the template-->
     <script src="resources/js/jquery-3.3.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/jquery.magnific-popup.min.js"></script>
